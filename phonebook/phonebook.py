@@ -101,7 +101,7 @@ def show_entrys():
             print()
             i += 1
             entry_number += 1
-            if i == 20:
+            if i % 20 == 0:
                 print(PAGINATION_PHRASE)
                 command = str(input()).strip()
                 if command != 'next':
@@ -118,7 +118,22 @@ def edit_entry():
         print('Заполнены не все поля')
         start()
     result = find(entry)
-    
+    if len(result) != 1:
+        print('Запись не найдена')
+        return
+    f_entry = json.dumps(result[0])
+    with open('phonebook.txt', 'r') as pbr, open('phonebook.txt', 'w') as pbw:
+        lines = pbr.readlines()
+
+        for line in lines:
+            line = line.strip()
+            if line == f_entry:
+                n_entry = entry_input()
+                n_entry = json.dumps(n_entry)
+                pbw.write(n_entry)
+            else:
+                pbw.write(line)
+    start()
 
 
 def exit():
