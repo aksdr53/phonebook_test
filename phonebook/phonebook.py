@@ -6,7 +6,8 @@ from constant import (START_PHRASE,
                       FIND_PHRASE,
                       TABEL_HEAD,
                       PAGINATION_PHRASE,
-                      EDIT_PHRASE)
+                      EDIT_PHRASE,
+                      NEW_EDIT_PHRASE)
 
 def clear():
     if name == 'nt':  
@@ -122,17 +123,22 @@ def edit_entry():
         print('Запись не найдена')
         return
     f_entry = json.dumps(result[0])
-    with open('phonebook.txt', 'r') as pbr, open('phonebook.txt', 'w') as pbw:
+    with open('phonebook.txt', 'r') as pbr:
         lines = pbr.readlines()
-
+        print(lines)
+        new_line = []
         for line in lines:
             line = line.strip()
             if line == f_entry:
+                print(NEW_EDIT_PHRASE)
                 n_entry = entry_input()
                 n_entry = json.dumps(n_entry)
-                pbw.write(n_entry)
+                new_line.append(n_entry)
             else:
-                pbw.write(line)
+                new_line.append(line)
+    with open('phonebook.txt', 'w') as pbw:
+        for line in new_line:
+            print(line, file=pbw)
     start()
 
 

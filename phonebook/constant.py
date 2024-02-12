@@ -24,6 +24,12 @@ EDIT_PHRASE = (
         'название организации(organization),\nтелефон рабочий(work_number),\n'
         'телефон личный (сотовый)(personal_number)'
 )
+NEW_EDIT_PHRASE = (
+        'Введите новые данные\n'
+        'фамилию(family_name),\nимя(firs_name),\nотчество(last_name),\n'
+        'название организации(organization),\nтелефон рабочий(work_number),\n'
+        'телефон личный (сотовый)(personal_number)'  
+)
 TABEL_HEAD = (
     '| № |'
     '|        Фамилия       |'
