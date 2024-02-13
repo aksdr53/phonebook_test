@@ -1,3 +1,6 @@
+"""Constants that store text output to the console
+"""
+
 START_PHRASE = (' ГЛАВНОЕ МЕНЮ\n'
                 'Команды:\n'
                 'add - добавить запись\n'

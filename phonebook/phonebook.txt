@@ -96,5 +96,5 @@
 {"family_name": "Duma", "first_name": "Viktor", "last_name": "Petrovich", "organization": "IP", "work_number": "79101051087", "personal_number": "79060141894"}
 {"family_name": "Sidorenko", "first_name": "Svetlana", "last_name": "Alekseevich", "organization": "LLC", "work_number": "79771656845", "personal_number": "79599092134"}
 {"family_name": "Galich", "first_name": "Izmenennaya", "last_name": "Borisovich", "organization": "IP", "work_number": "79428995128", "personal_number": "79858890796"}
-{"family_name": "Moroz", "first_name": "Anton", "last_name": "Borisovich", "organization": "IP", "work_number": "79546001083", "personal_number": "79466509113"}
+{"family_name": "Moroz", "first_name": "Izmenennyi", "last_name": "Borisovich", "organization": "IP", "work_number": "79546001083", "personal_number": "79466509113"}
 {"family_name": "Shagal", "first_name": "Anton", "last_name": "Borisovich", "organization": "OOO", "work_number": "79414871734", "personal_number": "79382689583"}

@@ -1,3 +1,6 @@
+"""
+Module starts the phonebook app
+"""
 from session import Sessiion
 from phonebook import PhoneBook
 
